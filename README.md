@@ -1,73 +1,56 @@
-# Welcome to your Lovable project
+Expert AI Portfolio
+===================
 
-## Project info
+Personal portfolio site for Adam Gonzalez, a Sr. ML/Generative AI Engineer. Built with Vite, React, TypeScript, Tailwind CSS, and shadcn/ui to showcase AI skills, projects, and experience.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Features
+--------
+- Hero with animated background, social links, and primary contact CTA
+- Skills grid covering Generative AI, ML, CV, Cloud, languages, and databases
+- Experience timeline for roles at Google, Nike, Urbint, and Amazon
+- Featured projects with tech badges and GitHub CTA
+- Contact section with email, phone, location, and social links
+- Responsive navigation with smooth anchor links for sections
 
-## How can I edit this code?
+Tech Stack
+----------
+- React 18 + TypeScript
+- Vite for bundling and local development
+- Tailwind CSS with shadcn/ui components
+- lucide-react icon set
 
-There are several ways of editing your application.
+Getting Started
+---------------
+Prerequisites:
+- Node.js 18+ and npm
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+Install dependencies:
+```
+npm install
 ```
 
-**Edit a file directly in GitHub**
+Run the dev server:
+```
+npm run dev
+```
+Then open the printed local URL (default http://localhost:5173).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Other Scripts
+-------------
+- `npm run build` — production build
+- `npm run preview` — preview the production build locally
+- `npm run lint` — run ESLint
+- `npm run test` — run vitest test suite
 
-**Use GitHub Codespaces**
+Project Structure
+-----------------
+- `src/pages/Index.tsx` — main page assembling all sections
+- `src/components/` — UI sections (`HeroSection`, `SkillsSection`, `ExperienceSection`, `ProjectsSection`, `ContactSection`, `Navigation`)
+- `src/components/ui/` — shadcn/ui primitives
+- `src/lib/utils.ts` — utility helpers (e.g., `cn`)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Customization Notes
+-------------------
+- Update social/contact info in `HeroSection`, `ContactSection`, and `Navigation`
+- Adjust skills, experience entries, and projects in their respective section components
+- Tailwind theme values live in `tailwind.config.ts`

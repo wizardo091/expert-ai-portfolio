@@ -32,25 +32,19 @@ const Navigation = () => {
     >
       <div className="container px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <a href="#" className="text-xl font-bold">
-            <span className="text-gradient">AG</span>
-          </a>
+          <div></div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8 text-base">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 {link.label}
               </a>
             ))}
-            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-              <a href="mailto:a122691.craft@gmail.com">Hire Me</a>
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -72,15 +66,12 @@ const Navigation = () => {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-base text-muted-foreground hover:text-foreground transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}
                 </a>
               ))}
-              <Button size="sm" className="bg-primary text-primary-foreground w-full" asChild>
-                <a href="mailto:a122691.craft@gmail.com">Hire Me</a>
-              </Button>
             </div>
           </div>
         )}
