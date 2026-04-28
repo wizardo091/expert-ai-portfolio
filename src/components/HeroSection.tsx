@@ -17,7 +17,7 @@ const HeroSection = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[150px]" />
 
       <div className="container relative z-10 px-2 py-2 flex items-center justify-center">
-      <img
+      {/* <img
           src={portraitSrc}
           alt="Adam Gonzalez"
           className="w-1/4 h-1/4 rounded-full border border-border shadow-lg focus:outline-none focus:ring-2 focus:ring-primary transition-transform duration-200 hover:scale-105"
@@ -26,7 +26,7 @@ const HeroSection = () => {
           onMouseLeave={() => setIsPortraitFocused(false)}
           onFocus={() => setIsPortraitFocused(true)}
           onBlur={() => setIsPortraitFocused(false)}
-        />
+        /> */}
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 backdrop-blur-sm animate-slide-up">
