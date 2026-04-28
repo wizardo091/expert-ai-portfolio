@@ -2,7 +2,7 @@ import { Building2, MapPin, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    company: "Google",
+    company: "Blue Yonder",
     role: "Generative AI Engineer",
     location: "Remote",
     period: "Sep 2022 – Mar 2025",
