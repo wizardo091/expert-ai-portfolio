@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   const [isPortraitFocused, setIsPortraitFocused] = useState(false);
-  const portraitSrc = isPortraitFocused ? "/adam_focus.png" : "/adam.png";
+  const portraitSrc = isPortraitFocused ? "/adam_focus1.png" : "/adam1.png";
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
