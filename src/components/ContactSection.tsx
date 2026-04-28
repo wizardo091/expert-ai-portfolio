@@ -57,7 +57,7 @@ const ContactSection = () => {
               className="w-12 h-12 rounded-full glow-border"
               asChild
             >
-              <a href="https://www.linkedin.com/in/adam-g-7525153a7/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/adamgon091/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-5 h-5" />
               </a>
             </Button>
